@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 import { FooterComponent } from './footer/footer.component'
 import { NavbarComponent } from './navbar/navbar.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
+import { SellingBrandsComponent } from './selling-brands/selling-brands.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
     NavbarComponent,
-    GridViewComponent
+    GridViewComponent,
+    SellingBrandsComponent
   ],
   exports:[
     FooterComponent,
