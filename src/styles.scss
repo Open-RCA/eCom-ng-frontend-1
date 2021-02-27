@@ -4,3 +4,12 @@
 
 @import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: normal normal medium  Larsseit;
+}
+body{
+  @apply ml-9 mr-9;
+}
