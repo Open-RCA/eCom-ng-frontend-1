@@ -17,7 +17,8 @@ import { PagesHeaderComponent } from './pages-header/pages-header.component';
     exports: [
         FooterComponent,
         NavbarComponent,
-        PagesHeaderComponent
+        PagesHeaderComponent,
+        GridViewComponent
     ],
   imports: [
     BrowserModule,
