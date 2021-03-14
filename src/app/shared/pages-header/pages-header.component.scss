@@ -1,0 +1,28 @@
+
+
+.card {
+
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-running-shoes-lead-1576249557.jpg);
+  background-size: cover;
+}
+
+.info {
+  background: transparent linear-gradient(195deg, #0000001c 0%, #00000075 47%, #000000CC 100%) 0% 0% no-repeat padding-box;
+   transform: translateY(180%)
+    translateY(-44px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.title{
+  font: normal normal bold 40px/46px Larsseit;
+}
+
+.card:hover .info{
+  transform: translateY(100%) translateZ(0);
+}
+
+.description {
+  font: normal normal normal 13px/16px Larsseit;
+  line-height: 1;
+}
