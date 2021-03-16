@@ -11,7 +11,7 @@
   font: normal normal medium  Larsseit;
 }
 body{
-  @apply ml-9 mr-9;
+  /*@apply ml-9 mr-9;*/
 }
 
 .swiper-wrapper {
@@ -23,7 +23,7 @@ body{
   transition-property: transform;
   box-sizing: content-box;
   margin-top:150px !important;
-} 
+}
 
 .swiper-button-prev, .swiper-button-next {
   position: absolute;
