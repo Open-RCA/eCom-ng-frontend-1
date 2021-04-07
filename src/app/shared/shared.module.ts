@@ -5,6 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 import { SellingBrandsComponent } from './selling-brands/selling-brands.component';
 import { PagesHeaderComponent } from './pages-header/pages-header.component';
+import { DisplayCardComponent } from './display-card/display-card.component';
 
 @NgModule({
   declarations: [
@@ -12,14 +13,16 @@ import { PagesHeaderComponent } from './pages-header/pages-header.component';
     NavbarComponent,
     GridViewComponent,
     SellingBrandsComponent,
-    PagesHeaderComponent
+    PagesHeaderComponent,
+    DisplayCardComponent
   ],
-    exports: [
-        FooterComponent,
-        NavbarComponent,
-        PagesHeaderComponent,
-        GridViewComponent
-    ],
+  exports: [
+    FooterComponent,
+    NavbarComponent,
+    PagesHeaderComponent,
+    GridViewComponent,
+    DisplayCardComponent
+  ],
   imports: [
     BrowserModule,
   ],
