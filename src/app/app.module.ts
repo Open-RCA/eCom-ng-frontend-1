@@ -6,7 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PricesPipe } from './core/pipes/prices.pipe';
 import { SharedModule } from './shared/shared.module';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { ProductViewComponent } from './components/site/product-view/product-view.component';
+
+import { IonicModule } from '@ionic/angular';
 import { ProductSliderComponent } from './components/productSlider/product-slider/product-slider.component';
 import { BrandComponent } from './components/brand/brand/brand.component';
 
@@ -15,14 +18,16 @@ import { BrandComponent } from './components/brand/brand/brand.component';
     AppComponent,
     PricesPipe,
     ProductViewComponent,
-    ProductSliderComponent,
-    BrandComponent,
+  
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    SwiperModule
+    FontAwesomeModule,
+    IonicModule.forRoot()
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
