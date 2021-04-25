@@ -1,10 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SwiperModule } from "swiper/angular";
 import { FooterComponent } from './footer/footer.component'
 import { NavbarComponent } from './navbar/navbar.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 import { SellingBrandsComponent } from './selling-brands/selling-brands.component';
 import { PagesHeaderComponent } from './pages-header/pages-header.component';
+import { BrandComponent } from './brand/brand.component';
+import { ProductSliderComponent } from './productSlider/product-slider/product-slider.component';
 
 @NgModule({
   declarations: [
@@ -12,16 +15,22 @@ import { PagesHeaderComponent } from './pages-header/pages-header.component';
     NavbarComponent,
     GridViewComponent,
     SellingBrandsComponent,
-    PagesHeaderComponent
+    PagesHeaderComponent,
+    BrandComponent,
+    ProductSliderComponent,
   ],
     exports: [
         FooterComponent,
         NavbarComponent,
         PagesHeaderComponent,
-        GridViewComponent
+        GridViewComponent,
+        BrandComponent,
+        ProductSliderComponent
     ],
   imports: [
     BrowserModule,
+    SwiperModule
+    
   ],
   providers: [],
 })

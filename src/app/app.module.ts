@@ -7,16 +7,12 @@ import { AppComponent } from './app.component';
 import { PricesPipe } from './core/pipes/prices.pipe';
 import { SharedModule } from './shared/shared.module';
 import { ProductViewComponent } from './components/site/product-view/product-view.component';
-import { ProductSliderComponent } from './components/productSlider/product-slider/product-slider.component';
-import { BrandComponent } from './components/brand/brand/brand.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PricesPipe,
     ProductViewComponent,
-    ProductSliderComponent,
-    BrandComponent,
   ],
   imports: [
     BrowserModule,
