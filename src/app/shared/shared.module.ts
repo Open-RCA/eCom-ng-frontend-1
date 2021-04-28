@@ -25,12 +25,13 @@ import { ProductSliderComponent } from './productSlider/product-slider/product-s
         PagesHeaderComponent,
         GridViewComponent,
         BrandComponent,
-        ProductSliderComponent
+        ProductSliderComponent,
+        SellingBrandsComponent
     ],
   imports: [
     BrowserModule,
     SwiperModule
-    
+
   ],
   providers: [],
 })
