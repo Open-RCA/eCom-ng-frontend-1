@@ -1,3 +1,4 @@
+import { SharedModule } from 'src/app/shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,6 +10,7 @@ import { ProductViewComponent } from './product-view.component';
   declarations: [ProductViewComponent],
   imports: [
     CommonModule,
+    SharedModule,
     ProductViewRoutingModule
   ]
 })

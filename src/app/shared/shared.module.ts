@@ -1,4 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+
 import { NgModule } from '@angular/core';
 import { SwiperModule } from "swiper/angular";
 import { FooterComponent } from './footer/footer.component'
@@ -29,7 +30,7 @@ import { ProductSliderComponent } from './productSlider/product-slider/product-s
         SellingBrandsComponent
     ],
   imports: [
-    BrowserModule,
+    RouterModule,
     SwiperModule
 
   ],
