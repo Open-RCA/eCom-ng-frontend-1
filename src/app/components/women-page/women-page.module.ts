@@ -1,3 +1,4 @@
+import { SharedModule } from 'src/app/shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +10,8 @@ import { WomenPageComponent } from './women-page.component';
   declarations: [WomenPageComponent],
   imports: [
     CommonModule,
-    WomenPageRoutingModule
+    WomenPageRoutingModule,
+    SharedModule
   ]
 })
 export class WomenPageModule { }

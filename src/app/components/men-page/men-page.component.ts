@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenPageComponent implements OnInit {
 
+
+  public title = "For men";
+  public background = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-running-shoes-lead-1576249557.jpg"
+
   constructor() { }
 
   ngOnInit(): void {
