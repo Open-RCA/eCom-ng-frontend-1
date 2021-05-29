@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AnimationType } from 'src/app/shared/carousel/carousel.animation';
+import { CarouselComponent } from 'src/app/shared/carousel/carousel.component';
+import { Slide } from 'src/app/shared/carousel/carousel.model';
 
 @Component({
   selector: 'app-product-view',
@@ -7,40 +10,64 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductViewComponent implements OnInit {
 
-  slideIndex = 1;
-  constructor() { }
+  @ViewChild(CarouselComponent) carousel: CarouselComponent;
+
+  animationType = AnimationType.Scale;
+
+  animationTypes = [
+    {
+      name: "Scale",
+      value: AnimationType.Scale
+    },
+    {
+      name: "Fade",
+      value: AnimationType.Fade
+    },
+    {
+      name: "Flip",
+      value: AnimationType.Flip
+    },
+    {
+      name: "Jack In The Box",
+      value: AnimationType.JackInTheBox
+    }
+  ];
+  slides: Slide[] = [
+    {
+      headline: "For Your Current Mood",
+      src:
+        "https://images.unsplash.com/photo-1567653418876-5bb0e566e1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+    },
+    {
+      headline: "Miouw",
+      src:
+        "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+    },
+    {
+      headline: "In The Wilderness",
+      src:
+        "https://images.unsplash.com/photo-1557800634-7bf3c7305596?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2001&q=80"
+    },
+    {
+      headline: "Focus On The Writing",
+      src:
+        "https://images.unsplash.com/photo-1551410224-699683e15636?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+    }
+  ];
+
+  constructor() {}
+
+  setAnimationType(type) {
+    this.animationType = type.value;
+    setTimeout(() => {
+      this.carousel.onNextClick();
+    });
+  }
 
 
   ngOnInit(): void {
-    this.showSlides(this.slideIndex);
+
   }
 
-
-
-plusSlides(n) {
-  this.showSlides(this.slideIndex += n);
-}
-
-currentSlide(n) {
-  this.showSlides(this.slideIndex = n);
-}
-
-showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {this.slideIndex = 1}
-  if (n < 1) {this.slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    (<HTMLElement>slides[i]).style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  (<HTMLElement>slides[this.slideIndex-1]).style.display = "block";
-  dots[this.slideIndex-1].className += " active";
-  captionText.innerHTML =  (<HTMLImageElement>dots[this.slideIndex-1]).alt;
-}
 
 }

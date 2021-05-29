@@ -1,3 +1,4 @@
+import { ProductViewModule } from './components/product-view/product-view.module';
 import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -8,6 +9,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { IonicModule } from '@ionic/angular';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +18,7 @@ import { IonicModule } from '@ionic/angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ProductViewModule,
      RouterModule,
     FontAwesomeModule,
     IonicModule.forRoot()
