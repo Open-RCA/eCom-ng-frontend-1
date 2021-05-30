@@ -1,5 +1,141 @@
 
 
 <router-outlet></router-outlet>
+      <section class="category text-white py-6 md:py-12 mb-8 overflow-visible max-w-full">
+        <div class="px-4 container mx-auto my-2">
+            <div class="m-auto flex items-center justify-between md:justify-center w-1/2">
+              <span class="border-b-2 border-t-2 w-24 md:w-24 inline-block ml-2 rounded"></span>
+          
+              <h1 class="text-black md:text-2xl font-bold text-center my-8 text-3xl text-xl lg:mx-auto">
+                SHOP BY CATEGORY
+              </h1>
+          
+              <span class="border-b-2 border-t-2 w-24 md:w-24 inline-block ml-2 rounded"></span>
+            </div>
+          
+            <p class="text-center w-2/3 m-auto text-gray-800">
+              orem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt semper mauris et feugiat. Morbi ornare eleifend tellus, semper tincidunt augue tincidunt et. Suspendisse quis felis efficitur, lacinia tellus nec, vehicula tortor. Duis vitae volutpat nunc, quis sagittis arcu. Duis vitae rutrum justo.
+            </p>
+          </div>
 
+          <div class="w-full h-full md:h-auto grid grid-cols-3 md:grid-cols-3 gap-24 px-2 py-4">
+            <div class="select-none mb-6 w-full">
+                <div class="relative pb-64">
+                  <a href="#" class="cursor-pointer">
+                    <img class="absolute w-full h-full rounded object-cover border-b shadow-md cursor-pointer" src="https://images.unsplash.com/photo-1622193973749-4bbf7f20c1fe" alt="product name" />
+                  </a>
+                </div>
+            
+                <div class="px-4 -mt-16 relative">
+                  <div class="bg-white rounded shadow-lg border">            
+                      <a class="text-gray-800 block mt-2 truncate hover:underline font-medium text-lg text-center" href="#">
+                        ACCESSORIES
+                      </a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- item 2 -->
+              <div class="select-none mb-6 w-full">
+                <div class="relative pb-64">
+                  <a href="#" class="cursor-pointer">
+                    <img class="absolute w-full h-full rounded object-cover border-b shadow-md cursor-pointer" src="https://images.unsplash.com/photo-1491024579037-7484729a4420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="product name" />
+                  </a>
+                </div>
+            
+                <div class="px-4 -mt-16 relative">
+                  <div class="bg-white rounded shadow-lg border">
+            
+                      <a class="text-gray-800 block mt-2 truncate hover:underline font-medium text-lg text-center" href="#">
+                        CLOTHES
+                      </a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- item 3 -->
+              <div class="select-none mb-6 w-full">
+                <div class="relative pb-64">
+                  <a href="#" class="cursor-pointer">
+                    <img class="absolute w-full h-full rounded object-cover border-b shadow-md cursor-pointer" src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="product name" />
+                  </a>
+                </div>
+            
+                <div class="px-4 -mt-16 relative">
+                  <div class="bg-white rounded shadow-lg border">
+            
+                      <a class="text-gray-800 block mt-2 truncate hover:underline font-medium text-lg text-center" href="#">
+                        SHOES
+                      </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+
+      <section class="store_items">
+        <div class="flex flex-wrap">
+            <div class="w-full">
+              <ul class="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row">
+                <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                  <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal" (click)="toggleTabs(1)" [ngClass]="{'text-pink-600 bg-white': openTab !== 1, 'text-white bg-pink-600': openTab === 1}">
+          for men
+                  </a>
+                </li>
+                <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                  <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal" (click)="toggleTabs(2)" [ngClass]="{'text-pink-600 bg-white': openTab !== 2, 'text-white bg-pink-600': openTab === 2}">
+           for women
+                  </a>
+                </li>
+                <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                  <a class="text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal" (click)="toggleTabs(3)" [ngClass]="{'text-pink-600 bg-white': openTab !== 3, 'text-white bg-pink-600': openTab === 3}">
+            for kids
+                  </a>
+                </li>
+              </ul>
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="tab-content tab-space">
+                    <div [ngClass]="{'hidden': openTab !== 1, 'block': openTab === 1}">
+                      <p>
+                        Collaboratively administrate empowered markets via
+                        plug-and-play networks. Dynamically procrastinate B2C users
+                        after installed base benefits.
+                        <br />
+                        <br />
+                        Dramatically visualize customer directed convergence
+                        without revolutionary ROI.
+                      </p>
+                    </div>
+                    <div [ngClass]="{'hidden': openTab !== 2, 'block': openTab === 2}">
+                      <p>
+                        Completely synergize resource taxing relationships via
+                        premier niche markets. Professionally cultivate one-to-one
+                        customer service with robust ideas.
+                        <br />
+                        <br />
+                        Dynamically innovate resource-leveling customer service for
+                        state of the art customer service.
+                      </p>
+                    </div>
+                    <div [ngClass]="{'hidden': openTab !== 3, 'block': openTab === 3}">
+                      <p>
+                        Efficiently unleash cross-media information without
+                        cross-media value. Quickly maximize timely deliverables for
+                        real-time schemas.
+                        <br />
+                        <br />
+                        Dramatically maintain clicks-and-mortar solutions
+                        without functional solutions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+</main>
+<app-footer></app-footer> 
 
