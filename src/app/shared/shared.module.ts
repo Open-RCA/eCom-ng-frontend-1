@@ -10,6 +10,7 @@ import { PagesHeaderComponent } from './pages-header/pages-header.component';
 import { BrandComponent } from './brand/brand.component';
 import { ProductSliderComponent } from './productSlider/product-slider/product-slider.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     PagesHeaderComponent,
     BrandComponent,
     ProductSliderComponent,
-    CarouselComponent
+    CarouselComponent,
+    ProductComponent
   ],
     exports: [
         FooterComponent,
@@ -30,7 +32,8 @@ import { CarouselComponent } from './carousel/carousel.component';
         BrandComponent,
         ProductSliderComponent,
         SellingBrandsComponent,
-        CarouselComponent
+        CarouselComponent,
+        ProductComponent
     ],
   imports: [
     RouterModule,

@@ -11,5 +11,9 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  title = 'tailwind';
+  openTab = 1;
+  toggleTabs($tabNumber: number){
+    this.openTab = $tabNumber;
+  }
 }
