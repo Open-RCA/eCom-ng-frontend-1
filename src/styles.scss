@@ -4,6 +4,29 @@
 
 @import 'tailwindcss/utilities';
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: normal normal medium  Larsseit;
+}
+body{
+  /*@apply ml-9 mr-9;*/
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  margin-top:150px !important;
+}
+
+=======
 // *{
 //   box-sizing: border-box;
 //   margin: 0;
@@ -24,6 +47,7 @@
 //   box-sizing: content-box;
 //   margin-top:150px !important;
 // }
+>>>>>>> 31fec7dacd44614bd14e4ad74877ba412cb804f8
 
 // .swiper-button-prev, .swiper-button-next {
 //   position: absolute;
@@ -40,6 +64,26 @@
 //   background-color: #CFCFCF;
 // }
 
+<<<<<<< HEAD
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.swiper-button-prev{
+  left: auto;
+  right: 85px;
+}
+
+=======
 // .swiper-button-prev:after, .swiper-button-next:after {
 //   font-family: swiper-icons;
 //   font-size: var(--swiper-navigation-size);
@@ -57,3 +101,4 @@
 //   left: auto;
 //   right: 85px;
 // }
+>>>>>>> 31fec7dacd44614bd14e4ad74877ba412cb804f8
