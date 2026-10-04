@@ -1,0 +1,30 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Annabelle",
+    "Gahamanyi",
+    "bellamelissa",
+    "damour",
+    "main",
+    "origin",
+    "security/remove-injected-payload-main"
+  ],
+  "parent": {
+    "Annabelle": "main",
+    "Gahamanyi": "main",
+    "bellamelissa": "main",
+    "damour": "main",
+    "main": null,
+    "origin": "main",
+    "security/remove-injected-payload-main": "main"
+  },
+  "order": [
+    "main",
+    "Annabelle",
+    "Gahamanyi",
+    "bellamelissa",
+    "damour",
+    "origin",
+    "security/remove-injected-payload-main"
+  ]
+}
